@@ -1,28 +1,42 @@
-[中文](./README_zh.md)
+[中文](./README-zh.md)
 
 # NodeSeek Threads
 
-A user script that enhances the [NodeSeek](https://www.nodeseek.com/) comment section by introducing nested (threaded) comments, making conversations easier to follow.
+## English 🇬🇧
 
-## ✨ Features
+This Tampermonkey user script enhances the comment section on NodeSeek.com by providing advanced nested comment functionalities, including reliable username extraction, fully asynchronous cross-page quoting, and asynchronous mention processing.
 
-- **Nested Comments**: Automatically nests replies under their parent comments, creating a clear conversation tree.
-- **Visual Hierarchy**: Uses colored left borders to indicate nesting depth, making it easy to track conversations.
-- **Responsive Design**: Adapts to both desktop and mobile views for a great reading experience on any screen size.
-- **Theme Compatibility**: Supports both Light and Dark modes of the NodeSeek website, with automatic border color switching.
-- **Clear Indicators**: Adds a "Floor" label next to the username to clearly mark nested replies.
+### ✨ Features
 
-## 🚀 Installation
+*   **Enhanced Nested Comments:** Organizes replies into a clear, nested structure.
+*   **Reliable Username Extraction:** Accurately identifies comment authors.
+*   **Asynchronous Cross-Page Quoting:** Fetches and displays quotes from other pages without blocking the main thread, ensuring a smooth user experience and preventing image loading delays.
+*   **Asynchronous Mention Processing:** Processes mentions in the background, preventing performance bottlenecks during page load.
+*   **Signature Toggle:** Option to hide or show user signatures via Tampermonkey menu.
 
-1.  You need a user script manager, such as [Tampermonkey](https://www.tampermonkey.net/) (recommended) or [Violentmonkey](https://violentmonkey.github.io/).
-2.  Once the manager is installed, you can install the script in one of two ways:
-    - **Install from Greasy Fork**: [Click here to install](https://greasyfork.org/en/scripts/your-script-id) (You will need to replace this link after publishing your script).
-    - **Install from file**: Drag and drop the `nodeseek_nested_comments_v26_no_header_merge.user.js` file into your browser's extensions management page.
+### 🚀 Installation
+
+1.  Install a user script manager like [Tampermonkey](https://www.tampermonkey.net/) (recommended) or [Violentmonkey](https://violentmonkey.github.io/).
+2.  Click on the following link to install the script:
+    [nodeseek-threads-v1.6.user.js](nodeseek-threads-v1.6.user.js) or [greasyfork.org](https://greasyfork.org/zh-CN/scripts/542426-nodeseek-threads?locale_override=1)
+3.  Confirm the installation in your user script manager.
+
+### 💡 Usage
+
+Once installed, the script will automatically enhance the comment section on `https://www.nodeseek.com/post-*` pages. You can toggle the display of user signatures via the Tampermonkey menu icon in your browser toolbar.
 
 ## 📝 Author
 
-- Gemini-2.5-Pro & Dean
+- Dean & Gemini 
 
-## 📄 License
+### 💻 Development
 
-This project is licensed under the [MIT License](./LICENSE).
+If you wish to contribute or modify the script:
+
+1.  Clone this repository.
+2.  Make your changes to `nodeseek-threads-v1.6.user.js`.
+3.  Load the local file into your user script manager.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
